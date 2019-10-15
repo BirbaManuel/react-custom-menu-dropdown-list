@@ -8,15 +8,40 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 50vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex-direction: row;
+  align-items: stretch;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.el{
+  padding: 10px;
+  margin: 0 10px;
+}
+.el_1{
+  background-color: lightblue;
+}
+.el_2{
+  background-color: lightcoral;
+}
+.el_3{
+  background-color: lightpink;
+  min-width: 500px;
+  position: absolute;
+  right: 0px;
+  min-height: 154px;
+  display: flex;
+  align-items: stretch;
+}
+
+
+.element_dropdown_list{
+  background-color: red;
+  width: 100%;
+}
+.element_input_date{
+  background-color: green;
+  width: 100%;
 }
