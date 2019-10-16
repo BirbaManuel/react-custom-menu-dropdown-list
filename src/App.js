@@ -9,7 +9,7 @@ function App() {
     <div className="wrapper">
       <Router>
         <Menu/>
-        <Route exact path="/choisir" render={ (props) => <div>Choisir un marché</div>} />
+        <Route exact path="/" render={ (props) => <div>Choisir un marché</div>} />
         <Route exact path="/Particulier" render={ (props) => <div>Particulier</div>} />
         <Route exact path="/Professionnel" render={ (props) => <div>Professionnel</div>} />
         <Route exact path="/bp" render={ (props) => <div>Banque-privée</div>} />

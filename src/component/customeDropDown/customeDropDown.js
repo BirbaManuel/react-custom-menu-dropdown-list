@@ -15,7 +15,7 @@ function Welcome (props) {
         <div className="select-box">
             <select className="select-box__current" tabIndex="1" value={selected} onChange={handleClick}>
                 <div className="select-box__value">
-                    <input className="select-box__input" type="radio" id="0" value="choisir" name="Ben" defaultChecked="checked"/>
+                    <input className="select-box__input" type="radio" id="0" value="/" name="Ben" defaultChecked="checked"/>
                     <p className="select-box__input-text">Particulier</p>
                 </div>
                 <div className="select-box__value">
@@ -39,7 +39,7 @@ function Welcome (props) {
                     <p className="select-box__input-text">Entreprise</p>
                 </div><img className="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
             </select>
-            <ul className="select-box__list">
+            <ul className="select-box__list wrapper_ul_dropdownlist">
                 <li>
                 <label className="select-box__option" htmlFor="0" aria-hidden={true}>Global</label>
                 </li>
