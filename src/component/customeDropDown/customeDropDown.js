@@ -41,22 +41,22 @@ function Welcome (props) {
             </select>
             <ul className="select-box__list wrapper_ul_dropdownlist">
                 <li>
-                <label className="select-box__option" htmlFor="0" aria-hidden={true}>Global</label>
+                    <label className="select-box__option" htmlFor="0" aria-hidden={true}>Global</label>
                 </li>
                 <li>
-                <label className="select-box__option" htmlFor="1" aria-hidden={true}>Banque-privée</label>
+                    <label className="select-box__option" htmlFor="1" aria-hidden={true}>Banque-privée</label>
                 </li>
                 <li>
-                <label className="select-box__option" htmlFor="2" aria-hidden={true}>Agriculteur</label>
+                    <label className="select-box__option" htmlFor="2" aria-hidden={true}>Agriculteur</label>
                 </li>
                 <li>
-                <label className="select-box__option" htmlFor="3" aria-hidden={true}>Association</label>
+                    <label className="select-box__option" htmlFor="3" aria-hidden={true}>Association</label>
                 </li>
                 <li>
-                <label className="select-box__option" htmlFor="4" aria-hidden={true}>Collectivités publiques</label>
+                    <label className="select-box__option" htmlFor="4" aria-hidden={true}>Collectivités publiques</label>
                 </li>
                 <li>
-                <label className="select-box__option" htmlFor="5" aria-hidden={true}>Entreprise</label>
+                    <label className="select-box__option" htmlFor="5" aria-hidden={true}>Entreprise</label>
                 </li>
             </ul>
         </div>
