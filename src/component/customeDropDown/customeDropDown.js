@@ -27,19 +27,19 @@ const Welcome = ()=>{
             </div>
             <ul className="select-box__list">
                 <li>
-                <label className="select-box__option" htmlFor="0" aria-hidden="aria-hidden">Cream</label>
+                <label className="select-box__option" htmlFor="0" aria-hidden={true}>Cream</label>
                 </li>
                 <li>
-                <label className="select-box__option" htmlFor="1" aria-hidden="aria-hidden">Cheese</label>
+                <label className="select-box__option" htmlFor="1" aria-hidden={true}>Cheese</label>
                 </li>
                 <li>
-                <label className="select-box__option" htmlFor="2" aria-hidden="aria-hidden">Milk</label>
+                <label className="select-box__option" htmlFor="2" aria-hidden={true}>Milk</label>
                 </li>
                 <li>
-                <label className="select-box__option" htmlFor="3" aria-hidden="aria-hidden">Honey</label>
+                <label className="select-box__option" htmlFor="3" aria-hidden={true}>Honey</label>
                 </li>
                 <li>
-                <label className="select-box__option" htmlFor="4" aria-hidden="aria-hidden">Toast</label>
+                <label className="select-box__option" htmlFor="4" aria-hidden={true}>Toast</label>
                 </li>
             </ul>
         </div>
