@@ -129,6 +129,10 @@ body {
   }
 }
 
+.remove-select-default-style{
+    border: 0px;
+    outline: 0px;
+}
 .wrapper_ul_dropdownlist{
-	/* background-color: lightgreen; */
+    /* background-color: lightgreen; */
 }

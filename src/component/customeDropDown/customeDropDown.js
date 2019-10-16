@@ -11,9 +11,11 @@ function Welcome (props) {
         setSelected(path);
 
     };
+    const message = (selected === "/") ? "Global" : selected
     return (
         <div className="select-box">
-            <select className="select-box__current" tabIndex="1" value={selected} onChange={handleClick}>
+            <div>{message}</div>
+            <select className="select-box__current remove-select-default-style" tabIndex="1" value={selected} onChange={handleClick}>
                 <div className="select-box__value">
                     <input className="select-box__input" type="radio" id="global" value="/" name="Ben" defaultChecked="checked"/>
                     <p className="select-box__input-text">Global</p>
@@ -27,25 +29,50 @@ function Welcome (props) {
                     <p className="select-box__input-text">Particulier</p>
                 </div>
                 <div className="select-box__value">
-                    <input className="select-box__input" type="radio" id="1" value="bp" name="Ben"/>
+                    <input className="select-box__input" type="radio" id="bp" value="bp" name="Ben"/>
                     <p className="select-box__input-text">Banque-privée</p>
                 </div>
                 <div className="select-box__value">
-                    <input className="select-box__input" type="radio" id="2" value="agriculteur" name="Ben"/>
+                    <input className="select-box__input" type="radio" id="agriculteur" value="agriculteur" name="Ben"/>
                     <p className="select-box__input-text">agriculteur</p>
                 </div>
                 <div className="select-box__value">
-                <input className="select-box__input" type="radio" id="3" value="association" name="Ben"/>
+                    <input className="select-box__input" type="radio" id="association" value="association" name="Ben"/>
                     <p className="select-box__input-text">association</p>
-                    </div>
+                </div>
                 <div className="select-box__value">
-                    <input className="select-box__input" type="radio" id="4" value="collPub" name="Ben"/>
+                    <input className="select-box__input" type="radio" id="collPub" value="collPub" name="Ben"/>
                     <p className="select-box__input-text">Collectivités publiques</p>
-                </div><img className="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+                {/* </div><img className="select-box__icon"  src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/> */}
+                </div>
                 <div className="select-box__value">
-                    <input className="select-box__input" type="radio" id="5" value="Entreprise" name="Ben"/>
+                    <input className="select-box__input" type="radio" id="Entreprise" value="Entreprise" name="Ben"/>
                     <p className="select-box__input-text">Entreprise</p>
-                </div><img className="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+                </div>
+                <div className="select-box__value">
+                    <input className="select-box__input" type="radio" id="assurance" value="assurance" name="Ben"/>
+                    <p className="select-box__input-text">Focus Assurance</p>
+                </div>
+                <div className="select-box__value">
+                    <input className="select-box__input" type="radio" id="epargne" value="epargne" name="Ben"/>
+                    <p className="select-box__input-text">Focus Epargne</p>
+                </div>
+                <div className="select-box__value">
+                    <input className="select-box__input" type="radio" id="credits" value="credits" name="Ben"/>
+                    <p className="select-box__input-text">Focus Credits</p>
+                </div>
+                <div className="select-box__value">
+                    <input className="select-box__input" type="radio" id="nexecur" value="nexecur" name="Ben"/>
+                    <p className="select-box__input-text">Nexecur</p>
+                </div>
+                <div className="select-box__value">
+                    <input className="select-box__input" type="radio" id="amundi" value="amundi" name="Ben"/>
+                    <p className="select-box__input-text">Amundi</p>
+                </div>
+                <div className="select-box__value">
+                    <input className="select-box__input" type="radio" id="unimedia" value="unimedia" name="Ben"/>
+                    <p className="select-box__input-text">Unimedia</p>
+                </div>
             </select>
             <ul className="select-box__list wrapper_ul_dropdownlist">
                 <li>
@@ -66,19 +93,47 @@ function Welcome (props) {
                             <label className="select-box__option" htmlFor="Professionnel" aria-hidden={true}>Professionel</label>
                         </li>
                         <li>
-                            <label className="select-box__option" htmlFor="1" aria-hidden={true}>Banque-privée</label>
+                            <label className="select-box__option" htmlFor="bp" aria-hidden={true}>Banque-privée</label>
                         </li>
                         <li>
-                            <label className="select-box__option" htmlFor="2" aria-hidden={true}>Agriculteur</label>
+                            <label className="select-box__option" htmlFor="agriculteur" aria-hidden={true}>Agriculteur</label>
                         </li>
                         <li>
-                            <label className="select-box__option" htmlFor="3" aria-hidden={true}>Association</label>
+                            <label className="select-box__option" htmlFor="association" aria-hidden={true}>Association</label>
                         </li>
                         <li>
-                            <label className="select-box__option" htmlFor="4" aria-hidden={true}>Collectivités publiques</label>
+                            <label className="select-box__option" htmlFor="collPub" aria-hidden={true}>Collectivités publiques</label>
                         </li>
                         <li>
-                            <label className="select-box__option" htmlFor="5" aria-hidden={true}>Entreprise</label>
+                            <label className="select-box__option" htmlFor="Entreprise" aria-hidden={true}>Entreprise</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label className="select-box__option">Focus</label>
+                    <ul>
+                        <li>
+                            <label className="select-box__option" htmlFor="assurance" aria-hidden={true}>Focus Assurance</label>
+                        </li>
+                        <li>
+                            <label className="select-box__option" htmlFor="epargne" aria-hidden={true}>Focus Epargne</label>
+                        </li>
+                        <li>
+                            <label className="select-box__option" htmlFor="credits" aria-hidden={true}>Focus Crédits</label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label className="select-box__option">Filiales</label>
+                    <ul>
+                        <li>
+                            <label className="select-box__option" htmlFor="nexecur" aria-hidden={true}>Nexecur</label>
+                        </li>
+                        <li>
+                            <label className="select-box__option" htmlFor="amundi" aria-hidden={true}>Amundi</label>
+                        </li>
+                        <li>
+                            <label className="select-box__option" htmlFor="unimedia" aria-hidden={true}>Uni-médias</label>
                         </li>
                     </ul>
                 </li>
