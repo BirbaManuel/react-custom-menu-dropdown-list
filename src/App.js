@@ -3,13 +3,13 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 
 import Menu  from './component/dropdown/Menu';
-import customeDropDown  from './component/customeDropDown/customeDropDown';
+import CustomeDropDown  from './component/customeDropDown/CustomeDropDown';
 
 function App() {
   return (
     <Router>
       <Menu/>
-      <Route exact path="/" render={ (props) => <customeDropDown {...props}/>} />
+      <Route exact path="/" render={ (props) => <CustomeDropDown {...props}/>} />
     </Router>
   );
 }
