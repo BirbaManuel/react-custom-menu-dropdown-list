@@ -85,12 +85,12 @@ function Welcome (props) {
                 </li>
                 <li>
                     <label className="select-box__option">Marchés</label>
-                    <ul className="wrapper_ul_dropdownlist_from_li">
+                    <ul>
                         <li>
-                            <label className="select-box__option" htmlFor="Particulier" aria-hidden={true}>Particulier</label>
+                            <label className="select-box__option" htmlFor="Particulier" aria-hidden={true}>Particuliers</label>
                         </li>
                         <li>
-                            <label className="select-box__option" htmlFor="Professionnel" aria-hidden={true}>Professionel</label>
+                            <label className="select-box__option" htmlFor="Professionnel" aria-hidden={true}>Professionels</label>
                         </li>
                         <li>
                             <label className="select-box__option" htmlFor="bp" aria-hidden={true}>Banque-privée</label>
@@ -113,13 +113,13 @@ function Welcome (props) {
                     <label className="select-box__option">Focus</label>
                     <ul >
                         <li>
-                            <label className="select-box__option" htmlFor="assurance" aria-hidden={true}>Focus Assurance</label>
+                            <label className="select-box__option" htmlFor="assurance" aria-hidden={true}>Assurance</label>
                         </li>
                         <li>
-                            <label className="select-box__option" htmlFor="epargne" aria-hidden={true}>Focus Epargne</label>
+                            <label className="select-box__option" htmlFor="epargne" aria-hidden={true}>Epargne</label>
                         </li>
                         <li>
-                            <label className="select-box__option" htmlFor="credits" aria-hidden={true}>Focus Crédits</label>
+                            <label className="select-box__option" htmlFor="credits" aria-hidden={true}>Crédits</label>
                         </li>
                     </ul>
                 </li>
@@ -133,7 +133,7 @@ function Welcome (props) {
                             <label className="select-box__option" htmlFor="amundi" aria-hidden={true}>Amundi</label>
                         </li>
                         <li>
-                            <label className="select-box__option" htmlFor="unimedia" aria-hidden={true}>Uni-médias</label>
+                            <label className="select-box__option" htmlFor="unimedia" aria-hidden={true}>Uni-Médias</label>
                         </li>
                     </ul>
                 </li>
