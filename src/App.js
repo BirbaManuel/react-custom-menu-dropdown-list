@@ -6,7 +6,7 @@ import Menu  from './component/dropdown/Menu';
 
 function App() {
   return (
-    <div className="wrapper">
+    <div className="app-wrapper">
       <Router>
         <Menu/>
         <Route exact path="/" render={ (props) => <div>Display component "Choisir un marché"</div>} />

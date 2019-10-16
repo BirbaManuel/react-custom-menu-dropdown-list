@@ -1,5 +1,5 @@
-.wrapper {
-  background-color: #4CAF50;
+.app-wrapper {
+  background-color: #74B243;
   min-height: 50vh;
   display: flex;
   flex-direction: row;
