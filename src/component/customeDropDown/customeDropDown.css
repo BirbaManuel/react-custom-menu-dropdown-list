@@ -133,9 +133,23 @@ body {
     border: 0px;
     outline: 0px;
 }
+ul.select-box__list.wrapper_ul_dropdownlist > li > label{
+    color:#74B243;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+ul.select-box__list.wrapper_ul_dropdownlist > li > label ::before{
+    border-left: #74B243 solid 1px ;
+}
+
 ul.select-box__list.wrapper_ul_dropdownlist li ul{
     /* background-color: lightgreen; */
     list-style-type: none;
     /* margin: 0;
     padding: 0; */
+}
+
+ul.select-box__list.wrapper_ul_dropdownlist li ul{
+
 }
