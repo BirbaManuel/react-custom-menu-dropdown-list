@@ -76,7 +76,7 @@ function Welcome (props) {
             </select>
             <ul className="select-box__list wrapper_ul_dropdownlist">
                 <li>
-                    <label className="select-box__option">Traffic Global</label>
+                    <label className="select-box__option">Trafic Global</label>
                     <ul>
                         <li>
                             <label className="select-box__option" htmlFor="global" aria-hidden={true}>Global</label>
