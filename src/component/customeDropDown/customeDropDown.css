@@ -104,7 +104,7 @@ body {
 .select-box__option:hover, .select-box__option:focus {
   color: #546c84;
   /* background-color: #fbfbfb; */
-  background-color: red;
+  box-shadow: 0px 5px 1px rgba(155, 155, 155, .9);
 }
 
 @-webkit-keyframes HideList {
@@ -144,12 +144,14 @@ ul.select-box__list.wrapper_ul_dropdownlist > li > label ::before{
 }
 
 ul.select-box__list.wrapper_ul_dropdownlist li ul{
-    /* background-color: lightgreen; */
     list-style-type: none;
-    /* margin: 0;
-    padding: 0; */
 }
 
-ul.select-box__list.wrapper_ul_dropdownlist li ul{
+ul.select-box__list.wrapper_ul_dropdownlist li ul li > label{
+    font-size: 15px;
+    font-weight: 600;
+}
 
+ul.select-box__list.wrapper_ul_dropdownlist li ul li > label:hover, ul.select-box__list.wrapper_ul_dropdownlist li ul li > label:focus{
+    box-shadow: 0px 5px 1px rgba(155, 155, 155, .9);
 }

@@ -11,11 +11,9 @@ function Welcome (props) {
         setSelected(path);
 
     };
-    const message = (selected === "/") ? "Global" : selected
     return (
         <div className="select-box">
-            <div>{message}</div>
-            <select className="select-box__current remove-select-default-style" tabIndex="1" value={selected} onChange={handleClick}>
+            <div className="select-box__current remove-select-default-style" tabIndex="1" value={selected} onChange={handleClick}>
                 <div className="select-box__value">
                     <input className="select-box__input" type="radio" id="global" value="/" name="Ben" defaultChecked="checked"/>
                     <p className="select-box__input-text">Global</p>
@@ -26,7 +24,7 @@ function Welcome (props) {
                 </div>
                 <div className="select-box__value">
                     <input className="select-box__input" type="radio" id="Professionnel" value="Professionnel" name="Ben" defaultChecked="checked"/>
-                    <p className="select-box__input-text">Particulier</p>
+                    <p className="select-box__input-text">Professionnel</p>
                 </div>
                 <div className="select-box__value">
                     <input className="select-box__input" type="radio" id="bp" value="bp" name="Ben"/>
@@ -73,7 +71,7 @@ function Welcome (props) {
                     <input className="select-box__input" type="radio" id="unimedia" value="unimedia" name="Ben"/>
                     <p className="select-box__input-text">Unimedia</p>
                 </div>
-            </select>
+            </div>
             <ul className="select-box__list wrapper_ul_dropdownlist">
                 <li>
                     <label className="select-box__option">Trafic Global</label>
