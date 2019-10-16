@@ -1,45 +1,56 @@
-import React from "react"
+import React, {useState} from 'react';
 import "./customeDropDown.css"
-const Welcome = ()=>{
-    return(
+
+function Welcome (props) {
+    const [selected,setSelected] = useState(props.location.pathname.substring(1) || "");
+
+    const handleClick = (event) => {
+        const path = event.target.value
+        props.history.push(path);
+        console.log(path)
+        setSelected(path);
+
+    };
+    return (
         <div className="select-box">
-            <div className="select-box__current" tabIndex="1">
+            <select className="select-box__current" tabIndex="1" value={selected} onChange={handleClick}>
                 <div className="select-box__value">
-                <input className="select-box__input" type="radio" id="0" value="1" name="Ben" defaultChecked="checked"/>
-                <p className="select-box__input-text">Cream</p>
+                <option className="select-box__input" type="radio" id="0" value="/" name="Ben" defaultChecked="checked">Global</option>
+                {/* <option className="select-box__input" type="radio" id="Particulier" value="Particulier" name="Ben">Particulier</option> */}
+                <p className="select-box__input-text">Particulier</p>
                 </div>
                 <div className="select-box__value">
-                <input className="select-box__input" type="radio" id="1" value="2" name="Ben" defaultChecked="checked"/>
-                <p className="select-box__input-text">Cheese</p>
+                <input className="select-box__input" type="radio" id="1" value="bp" name="Ben"/>
+                <p className="select-box__input-text">Banque-privée</p>
                 </div>
                 <div className="select-box__value">
-                <input className="select-box__input" type="radio" id="2" value="3" name="Ben" defaultChecked="checked"/>
-                <p className="select-box__input-text">Milk</p>
+                <input className="select-box__input" type="radio" id="2" value="agriculteur" name="Ben"/>
+                <p className="select-box__input-text">agriculteur</p>
                 </div>
                 <div className="select-box__value">
-                <input className="select-box__input" type="radio" id="3" value="4" name="Ben" defaultChecked="checked"/>
-                <p className="select-box__input-text">Honey</p>
+                <input className="select-box__input" type="radio" id="3" value="association" name="Ben"/>
+                <p className="select-box__input-text">association</p>
                 </div>
                 <div className="select-box__value">
-                <input className="select-box__input" type="radio" id="4" value="5" name="Ben" defaultChecked="checked"/>
-                <p className="select-box__input-text">Toast</p>
+                <input className="select-box__input" type="radio" id="4" value="collPub" name="Ben"/>
+                <p className="select-box__input-text">Collectivités publiques</p>
                 </div><img className="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
-            </div>
+            </select>
             <ul className="select-box__list">
                 <li>
-                <label className="select-box__option" htmlFor="0" aria-hidden={true}>Cream</label>
+                <label className="select-box__option" htmlFor="0" aria-hidden={true}>Global</label>
                 </li>
                 <li>
-                <label className="select-box__option" htmlFor="1" aria-hidden={true}>Cheese</label>
+                <label className="select-box__option" htmlFor="1" aria-hidden={true}>Banque-privée</label>
                 </li>
                 <li>
-                <label className="select-box__option" htmlFor="2" aria-hidden={true}>Milk</label>
+                <label className="select-box__option" htmlFor="2" aria-hidden={true}>Agriculteur</label>
                 </li>
                 <li>
-                <label className="select-box__option" htmlFor="3" aria-hidden={true}>Honey</label>
+                <label className="select-box__option" htmlFor="3" aria-hidden={true}>Association</label>
                 </li>
                 <li>
-                <label className="select-box__option" htmlFor="4" aria-hidden={true}>Toast</label>
+                <label className="select-box__option" htmlFor="4" aria-hidden={true}>Collectivités publiques</label>
                 </li>
             </ul>
         </div>

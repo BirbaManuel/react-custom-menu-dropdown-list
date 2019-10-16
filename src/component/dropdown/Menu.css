@@ -1,3 +1,12 @@
 .background-lightblue{
     background-color:lightblue;
 }
+
+.componentMenu_market_select{
+    margin-right: 10px;
+}
+
+.customDropDownListContainer{
+    width: 100%;
+    background-color:lightcoral;
+}
