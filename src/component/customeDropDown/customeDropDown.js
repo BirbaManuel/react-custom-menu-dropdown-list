@@ -82,18 +82,6 @@ function Welcome (props) {
                         </li>
                     </ul>
                 </li>
-                {/* <li>
-                    <label className="select-box__option" htmlFor="2" aria-hidden={true}>Agriculteur</label>
-                </li>
-                <li>
-                    <label className="select-box__option" htmlFor="3" aria-hidden={true}>Association</label>
-                </li>
-                <li>
-                    <label className="select-box__option" htmlFor="4" aria-hidden={true}>Collectivités publiques</label>
-                </li>
-                <li>
-                    <label className="select-box__option" htmlFor="5" aria-hidden={true}>Entreprise</label>
-                </li> */}
             </ul>
         </div>
         )
