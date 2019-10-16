@@ -85,7 +85,7 @@ function Welcome (props) {
                 </li>
                 <li>
                     <label className="select-box__option">Marchés</label>
-                    <ul>
+                    <ul className="wrapper_ul_dropdownlist_from_li">
                         <li>
                             <label className="select-box__option" htmlFor="Particulier" aria-hidden={true}>Particulier</label>
                         </li>
@@ -111,7 +111,7 @@ function Welcome (props) {
                 </li>
                 <li>
                     <label className="select-box__option">Focus</label>
-                    <ul>
+                    <ul >
                         <li>
                             <label className="select-box__option" htmlFor="assurance" aria-hidden={true}>Focus Assurance</label>
                         </li>

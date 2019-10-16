@@ -133,6 +133,9 @@ body {
     border: 0px;
     outline: 0px;
 }
-.wrapper_ul_dropdownlist{
+ul.select-box__list.wrapper_ul_dropdownlist li ul{
     /* background-color: lightgreen; */
+    list-style-type: none;
+    /* margin: 0;
+    padding: 0; */
 }
