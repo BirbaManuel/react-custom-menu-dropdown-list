@@ -103,7 +103,8 @@ body {
 }
 .select-box__option:hover, .select-box__option:focus {
   color: #546c84;
-  background-color: #fbfbfb;
+  /* background-color: #fbfbfb; */
+  background-color: red;
 }
 
 @-webkit-keyframes HideList {

@@ -15,7 +15,15 @@ function Welcome (props) {
         <div className="select-box">
             <select className="select-box__current" tabIndex="1" value={selected} onChange={handleClick}>
                 <div className="select-box__value">
-                    <input className="select-box__input" type="radio" id="0" value="/" name="Ben" defaultChecked="checked"/>
+                    <input className="select-box__input" type="radio" id="global" value="/" name="Ben" defaultChecked="checked"/>
+                    <p className="select-box__input-text">Global</p>
+                </div>
+                <div className="select-box__value">
+                    <input className="select-box__input" type="radio" id="Particulier" value="Particulier" name="Ben" defaultChecked="checked"/>
+                    <p className="select-box__input-text">Particulier</p>
+                </div>
+                <div className="select-box__value">
+                    <input className="select-box__input" type="radio" id="Professionnel" value="Professionnel" name="Ben" defaultChecked="checked"/>
                     <p className="select-box__input-text">Particulier</p>
                 </div>
                 <div className="select-box__value">
@@ -41,12 +49,40 @@ function Welcome (props) {
             </select>
             <ul className="select-box__list wrapper_ul_dropdownlist">
                 <li>
-                    <label className="select-box__option" htmlFor="0" aria-hidden={true}>Global</label>
+                    <label className="select-box__option">Traffic Global</label>
+                    <ul>
+                        <li>
+                            <label className="select-box__option" htmlFor="global" aria-hidden={true}>Global</label>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <label className="select-box__option" htmlFor="1" aria-hidden={true}>Banque-privée</label>
+                    <label className="select-box__option">Marchés</label>
+                    <ul>
+                        <li>
+                            <label className="select-box__option" htmlFor="Particulier" aria-hidden={true}>Particulier</label>
+                        </li>
+                        <li>
+                            <label className="select-box__option" htmlFor="Professionnel" aria-hidden={true}>Professionel</label>
+                        </li>
+                        <li>
+                            <label className="select-box__option" htmlFor="1" aria-hidden={true}>Banque-privée</label>
+                        </li>
+                        <li>
+                            <label className="select-box__option" htmlFor="2" aria-hidden={true}>Agriculteur</label>
+                        </li>
+                        <li>
+                            <label className="select-box__option" htmlFor="3" aria-hidden={true}>Association</label>
+                        </li>
+                        <li>
+                            <label className="select-box__option" htmlFor="4" aria-hidden={true}>Collectivités publiques</label>
+                        </li>
+                        <li>
+                            <label className="select-box__option" htmlFor="5" aria-hidden={true}>Entreprise</label>
+                        </li>
+                    </ul>
                 </li>
-                <li>
+                {/* <li>
                     <label className="select-box__option" htmlFor="2" aria-hidden={true}>Agriculteur</label>
                 </li>
                 <li>
@@ -57,7 +93,7 @@ function Welcome (props) {
                 </li>
                 <li>
                     <label className="select-box__option" htmlFor="5" aria-hidden={true}>Entreprise</label>
-                </li>
+                </li> */}
             </ul>
         </div>
         )
