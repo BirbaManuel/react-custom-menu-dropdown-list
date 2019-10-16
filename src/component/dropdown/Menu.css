@@ -1,12 +1,18 @@
-.background-lightblue{
+.menu_wrapper{
     background-color:lightblue;
+    display: flex;
 }
 
 .componentMenu_market_select{
-    margin-right: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+	border: 0px;
+    outline: 0px;
 }
 
 .customDropDownListContainer{
     width: 100%;
     background-color:lightcoral;
+    min-width: 25vh;
 }

@@ -16,7 +16,7 @@ function Menu (props) {
     };
 
         return (
-            <div>
+            <div className="menu_wrapper">
                 <select className="componentMenu_market_select" id="rubrique" value={selected} onChange={handleClick}>
                         <option id="selected" value="/">Choisir un marché</option>
                         <optgroup label="Trafic global">
@@ -46,7 +46,7 @@ function Menu (props) {
                         </optgroup>
                 </select>
                 <div className="customDropDownListContainer">
-                    <div>custom dropdown list</div>
+                    {/* <div>custom dropdown list</div> */}
                     <CustomeDropDown {...props}/>
                 </div>
             </div>

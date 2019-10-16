@@ -1,52 +1,10 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
+.wrapper {
+  background-color: #4CAF50;
   min-height: 50vh;
   display: flex;
   flex-direction: row;
   align-items: stretch;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.el{
-  padding: 10px;
-  margin: 0 10px;
-}
-.el_1{
-  background-color: lightblue;
-}
-.el_2{
-  background-color: lightcoral;
-}
-.el_3{
-  background-color: lightpink;
-  min-width: 500px;
-  position: absolute;
-  right: 0px;
-  min-height: 154px;
-  display: flex;
-  align-items: stretch;
-}
-
-
-.element_dropdown_list{
-  background-color: red;
   width: 100%;
-}
-.element_input_date{
-  background-color: green;
-  width: 100%;
-}
-
-
-.headercss{
-  margin-right: 10px
 }

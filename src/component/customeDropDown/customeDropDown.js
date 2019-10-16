@@ -15,25 +15,28 @@ function Welcome (props) {
         <div className="select-box">
             <select className="select-box__current" tabIndex="1" value={selected} onChange={handleClick}>
                 <div className="select-box__value">
-                <option className="select-box__input" type="radio" id="0" value="/" name="Ben" defaultChecked="checked">Global</option>
-                {/* <option className="select-box__input" type="radio" id="Particulier" value="Particulier" name="Ben">Particulier</option> */}
-                <p className="select-box__input-text">Particulier</p>
+                    <input className="select-box__input" type="radio" id="0" value="choisir" name="Ben" defaultChecked="checked"/>
+                    <p className="select-box__input-text">Particulier</p>
                 </div>
                 <div className="select-box__value">
-                <input className="select-box__input" type="radio" id="1" value="bp" name="Ben"/>
-                <p className="select-box__input-text">Banque-privée</p>
+                    <input className="select-box__input" type="radio" id="1" value="bp" name="Ben"/>
+                    <p className="select-box__input-text">Banque-privée</p>
                 </div>
                 <div className="select-box__value">
-                <input className="select-box__input" type="radio" id="2" value="agriculteur" name="Ben"/>
-                <p className="select-box__input-text">agriculteur</p>
+                    <input className="select-box__input" type="radio" id="2" value="agriculteur" name="Ben"/>
+                    <p className="select-box__input-text">agriculteur</p>
                 </div>
                 <div className="select-box__value">
                 <input className="select-box__input" type="radio" id="3" value="association" name="Ben"/>
-                <p className="select-box__input-text">association</p>
-                </div>
+                    <p className="select-box__input-text">association</p>
+                    </div>
                 <div className="select-box__value">
-                <input className="select-box__input" type="radio" id="4" value="collPub" name="Ben"/>
-                <p className="select-box__input-text">Collectivités publiques</p>
+                    <input className="select-box__input" type="radio" id="4" value="collPub" name="Ben"/>
+                    <p className="select-box__input-text">Collectivités publiques</p>
+                </div><img className="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
+                <div className="select-box__value">
+                    <input className="select-box__input" type="radio" id="5" value="Entreprise" name="Ben"/>
+                    <p className="select-box__input-text">Entreprise</p>
                 </div><img className="select-box__icon" src="http://cdn.onlinewebfonts.com/svg/img_295694.svg" alt="Arrow Icon" aria-hidden="true"/>
             </select>
             <ul className="select-box__list">
@@ -51,6 +54,9 @@ function Welcome (props) {
                 </li>
                 <li>
                 <label className="select-box__option" htmlFor="4" aria-hidden={true}>Collectivités publiques</label>
+                </li>
+                <li>
+                <label className="select-box__option" htmlFor="5" aria-hidden={true}>Entreprise</label>
                 </li>
             </ul>
         </div>
