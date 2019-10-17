@@ -1,0 +1,196 @@
+.select-box {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #60666d;
+}
+
+@media (min-width: 768px) {
+    .select-box {
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    .select-box {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .select-box {
+        width: 30%;
+    }
+}
+
+.select-box__current {
+    position: relative;
+    box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    outline: none;
+}
+
+.select-box__current:focus + .select-box__list {
+    opacity: 1;
+    -webkit-animation-name: none;
+    animation-name: none;
+}
+
+.select-box__current:focus + .select-box__list .select-box__option {
+    cursor: pointer;
+}
+
+.select-box__current:focus .select-box__icon {
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.select-box__icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 20px;
+    opacity: 0.3;
+    transition: 0.2s ease;
+}
+
+.select-box__value {
+    display: flex;
+}
+
+.select-box__input {
+    display: none;
+}
+
+.select-box__input:checked + .select-box__input-text {
+    display: block;
+}
+
+.select-box__input-text {
+    display: none;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    background-color: #fff;
+}
+.select-box__list ul {
+    list-style: none;
+}
+.select-box__list {
+    position: absolute;
+    width: 40vh;
+    background-color: white;
+    padding: 0;
+    opacity: 0;
+    -webkit-animation-name: HideList;
+    animation-name: HideList;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-timing-function: step-start;
+    animation-timing-function: step-start;
+    border-radius: 10px;
+    /* box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1); */
+    /* box-shadow:0px 10px 10px 10px rgba(116, 178, 167, 0.9); */
+    border-top: 10px solid #74b243
+}
+
+.select-box__option {
+    display: block;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.select-box__option::before {
+    /* border-left:1px solid #74B243 */
+}
+
+.select-box__option:hover, .select-box__option:focus {
+    /* add shadow on main label of the dropdownlist */
+    /* color: #546c84;
+    /* background-color: #fbfbfb;
+    box-shadow: 0px 5px 1px rgba(155, 155, 155, .9); */
+}
+
+@-webkit-keyframes HideList {
+    from {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+    to {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+    }
+}
+
+@keyframes HideList {
+    from {
+        -webkit-transform: scaleY(1);
+        transform: scaleY(1);
+    }
+    to {
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+    }
+}
+
+.remove-select-default-style {
+    border: 0px;
+    outline: 0px;
+}
+
+.select-box__list.wrapper_ul_dropdownlist #triangle_top_list_menu {
+    position: absolute;
+    top: -20px;
+    left: 10px;
+}
+
+.select-box__list.wrapper_ul_dropdownlist > ul > li > label {
+    color: #74B243;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.select-box__list.wrapper_ul_dropdownlist > ul > li > label ::before {
+    /* border-left: #74B243 solid 1px ; */
+}
+
+.select-box__list.wrapper_ul_dropdownlist > ul li ul {
+    list-style-type: none;
+}
+
+.select-box__list.wrapper_ul_dropdownlist > ul li ul li > label {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.select-box__list.wrapper_ul_dropdownlist > ul li ul li > label:hover, ul.select-box__list.wrapper_ul_dropdownlist li ul li > label:focus {
+    box-shadow: 0px 5px 1px rgba(116, 178, 67, .9);
+    color: #74b243;
+    /* box-shadow:-6px -1px 1px rgba(116, 178, 67, 0.9); */
+}
+
+.top-list {
+    width: 100%;
+    background-color: red;
+}
+
+#triangle_top_list_menu {
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #74b243;
+    border-left: 15px solid transparent;
+    position: relative;
+    top: 5px;
+    left: 200px;
+}

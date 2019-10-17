@@ -1,19 +1,10 @@
-import React, {useState} from 'react';
-import "./customeDropDown.css"
+import React from 'react';
+import "./customDropDown.css"
 
-function Welcome (props) {
-    const [selected,setSelected] = useState(props.location.pathname.substring(1) || "");
-
-    const handleClick = (event) => {
-        const path = event.target.value
-        props.history.push(path);
-        console.log(path)
-        setSelected(path);
-
-    };
+function CustomDropDown () {
     return (
         <div className="select-box">
-            <div className="select-box__current remove-select-default-style" tabIndex="1" value={selected} onChange={handleClick}>
+            <div className="select-box__current remove-select-default-style" tabIndex="1">
                 <div className="select-box__value">
                     <input className="select-box__input" type="radio" id="global" value="/" name="Ben" defaultChecked="checked"/>
                     <p className="select-box__input-text">Global</p>
@@ -73,7 +64,8 @@ function Welcome (props) {
                 </div>
             </div>
             {/* <div className="top-list">test</div> */}
-            <ul className="select-box__list wrapper_ul_dropdownlist">
+            <div className="select-box__list wrapper_ul_dropdownlist">
+                <ul>
                 <li>
                     <label className="select-box__option">| Trafic Global</label>
                     <ul>
@@ -137,9 +129,10 @@ function Welcome (props) {
                     </ul>
                 </li>
             </ul>
-            <div id="triangle_top_list_menu"></div>
+            <div id="triangle_top_list_menu"/>
+            </div>
         </div>
         )
 }
 
-export default Welcome
+export default CustomDropDown
