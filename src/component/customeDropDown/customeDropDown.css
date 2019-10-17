@@ -175,4 +175,7 @@ ul.select-box__list.wrapper_ul_dropdownlist li ul li > label:hover, ul.select-bo
     border-right: 15px solid transparent;
     border-bottom: 20px solid #74b243;
     border-left: 15px solid transparent;
+    position: relative;
+    top: 5px;
+    left: 200px;
 }
