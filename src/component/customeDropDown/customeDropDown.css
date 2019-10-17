@@ -81,6 +81,7 @@ body {
 .select-box__list {
   position: absolute;
   width: 40vh;
+  background-color: white;
   padding: 0;
   list-style: none;
   opacity: 0;

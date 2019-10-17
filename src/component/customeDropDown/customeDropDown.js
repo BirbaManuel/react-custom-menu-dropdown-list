@@ -74,7 +74,7 @@ function Welcome (props) {
             </div>
             <ul className="select-box__list wrapper_ul_dropdownlist">
                 <li>
-                    <label className="select-box__option">Trafic Global</label>
+                    <label className="select-box__option">| Trafic Global</label>
                     <ul>
                         <li>
                             <label className="select-box__option" htmlFor="global" aria-hidden={true}>Global</label>
@@ -82,7 +82,7 @@ function Welcome (props) {
                     </ul>
                 </li>
                 <li>
-                    <label className="select-box__option">Marchés</label>
+                    <label className="select-box__option">| Marchés</label>
                     <ul>
                         <li>
                             <label className="select-box__option" htmlFor="Particulier" aria-hidden={true}>Particuliers</label>
@@ -108,7 +108,7 @@ function Welcome (props) {
                     </ul>
                 </li>
                 <li>
-                    <label className="select-box__option">Focus</label>
+                    <label className="select-box__option">| Focus</label>
                     <ul >
                         <li>
                             <label className="select-box__option" htmlFor="assurance" aria-hidden={true}>Assurance</label>
@@ -122,7 +122,7 @@ function Welcome (props) {
                     </ul>
                 </li>
                 <li>
-                    <label className="select-box__option">Filiales</label>
+                    <label className="select-box__option">| Filiales</label>
                     <ul>
                         <li>
                             <label className="select-box__option" htmlFor="nexecur" aria-hidden={true}>Nexecur</label>
