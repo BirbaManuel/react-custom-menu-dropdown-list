@@ -80,7 +80,7 @@ body {
 }
 .select-box__list {
   position: absolute;
-  width: 100%;
+  width: 40vh;
   padding: 0;
   list-style: none;
   opacity: 0;
@@ -101,10 +101,14 @@ body {
   padding: 15px;
   background-color: #fff;
 }
+.select-box__option::before {
+    /* border-left:1px solid #74B243 */
+}
 .select-box__option:hover, .select-box__option:focus {
-  color: #546c84;
-  /* background-color: #fbfbfb; */
-  box-shadow: 0px 5px 1px rgba(155, 155, 155, .9);
+    /* add shadow on main label of the dropdownlist */
+  /* color: #546c84;
+  /* background-color: #fbfbfb;
+  box-shadow: 0px 5px 1px rgba(155, 155, 155, .9); */
 }
 
 @-webkit-keyframes HideList {
@@ -140,7 +144,7 @@ ul.select-box__list.wrapper_ul_dropdownlist > li > label{
 }
 
 ul.select-box__list.wrapper_ul_dropdownlist > li > label ::before{
-    border-left: #74B243 solid 1px ;
+    /* border-left: #74B243 solid 1px ; */
 }
 
 ul.select-box__list.wrapper_ul_dropdownlist li ul{
@@ -153,5 +157,5 @@ ul.select-box__list.wrapper_ul_dropdownlist li ul li > label{
 }
 
 ul.select-box__list.wrapper_ul_dropdownlist li ul li > label:hover, ul.select-box__list.wrapper_ul_dropdownlist li ul li > label:focus{
-    box-shadow: 0px 5px 1px rgba(155, 155, 155, .9);
+    box-shadow: 0px 5px 1px rgba(116, 178, 67, .9);
 }
