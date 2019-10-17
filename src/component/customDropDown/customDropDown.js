@@ -1,7 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import "./customDropDown.css"
 
-function CustomDropDown (props) {
+function CustomDropDown () {
     return (
         <div className="select-box">
             <div className="select-box__current remove-select-default-style" tabIndex="1">
