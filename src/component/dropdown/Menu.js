@@ -1,13 +1,13 @@
 import React from 'react';
 import { withRouter } from "react-router";
-import CustomeDropDown  from '../customeDropDown/CustomeDropDown';
 import "./Menu.css"
+import CustomDropDown from "../customDropDown/customDropDown";
 
 function Menu (props) {
         return (
             <div className="menu_wrapper">
                 <div className="customDropDownListContainer">
-                    <CustomeDropDown {...props}/>
+                    <CustomDropDown {...props}/>
                 </div>
             </div>
         );
