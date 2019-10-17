@@ -147,12 +147,6 @@
     outline: 0px;
 }
 
-.select-box__list.wrapper_ul_dropdownlist #triangle_top_list_menu {
-    position: absolute;
-    top: -20px;
-    left: 10px;
-}
-
 .select-box__list.wrapper_ul_dropdownlist > ul > li > label {
     color: #74B243;
     font-size: 20px;
@@ -190,7 +184,13 @@
     border-right: 15px solid transparent;
     border-bottom: 20px solid #74b243;
     border-left: 15px solid transparent;
-    position: relative;
-    top: 5px;
-    left: 200px;
+    position: absolute;
+    top: -3%;
+    left: 45%;
+}
+
+.ul_dropdownlist_displayed{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
