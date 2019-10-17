@@ -1,7 +1,7 @@
 import React from 'react';
 import { withRouter } from "react-router";
 import "./Menu.css"
-import CustomDropDown from "../customDropDown/CustomDropDown";
+import CustomDropDown from "../customDropDown/Menu";
 
 function Menu (props) {
         return (

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import "./customDropDown.css"
+import "./Menu.css"
 
-function CustomDropDown (props) {
+function Menu (props) {
     const [selected,setSelected] = useState(props.location.pathname.substring(1) || "");
 
     const handleClick = (event) => {
@@ -19,11 +19,11 @@ function CustomDropDown (props) {
                     <p className="select-box__input-text">Global</p>
                 </div>
                 <div className="select-box__value">
-                    <input className="select-box__input" type="radio" id="Particulier" value="Particulier" name="Ben" defaultChecked="checked"/>
+                    <input className="select-box__input" type="radio" id="Particulier" value="Particulier" name="Ben"/>
                     <p className="select-box__input-text">Particulier</p>
                 </div>
                 <div className="select-box__value">
-                    <input className="select-box__input" type="radio" id="Professionnel" value="Professionnel" name="Ben" defaultChecked="checked"/>
+                    <input className="select-box__input" type="radio" id="Professionnel" value="Professionnel" name="Ben"/>
                     <p className="select-box__input-text">Professionnel</p>
                 </div>
                 <div className="select-box__value">
@@ -144,4 +144,4 @@ function CustomDropDown (props) {
         )
 }
 
-export default CustomDropDown
+export default Menu
