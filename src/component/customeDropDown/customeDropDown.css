@@ -150,6 +150,7 @@ ul.select-box__list.wrapper_ul_dropdownlist li ul li > label{
 
 ul.select-box__list.wrapper_ul_dropdownlist li ul li > label:hover, ul.select-box__list.wrapper_ul_dropdownlist li ul li > label:focus{
     box-shadow: 0px 5px 1px rgba(116, 178, 67, .9);
+    color:#74b243;
     /* box-shadow:-6px -1px 1px rgba(116, 178, 67, 0.9); */
 }
 .top-list{
