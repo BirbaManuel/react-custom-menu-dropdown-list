@@ -168,11 +168,11 @@ ul.select-box__list.wrapper_ul_dropdownlist li ul li > label:hover, ul.select-bo
     width:100%;
     background-color:red;
 }
-#triangle-top-list-menu{
- display : inline-block;
- height : 0;
- width : 0;
- border-right : 87px solid transparent;
- border-bottom : 150px solid #74b243;
- border-left : 87px solid transparent;
+#triangle_top_list_menu{
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border-right: 15px solid transparent;
+    border-bottom: 20px solid #74b243;
+    border-left: 15px solid transparent;
 }

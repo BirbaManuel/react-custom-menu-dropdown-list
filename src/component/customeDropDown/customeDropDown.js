@@ -137,6 +137,7 @@ function Welcome (props) {
                     </ul>
                 </li>
             </ul>
+            <div id="triangle_top_list_menu"></div>
         </div>
         )
 }
